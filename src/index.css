@@ -1,5 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
 body {
   margin: 0;
+  padding-top: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,7 +16,79 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1,
+h2,
+h3,
+.bold {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    font-size:30px;
+    margin-top: 0;
+    
+}
+
+.text-container{
+ 
+  font-weight:600;
+  transition: transform 1s linear;
+}
+
+.text-container>span{
+  display:block;
+  opacity:0.4;
+  transform: scale(0.8);
+  transition:1s linear;
+}
+
+.specialbutton{
+ background: white;
+  box-shadow: 8px 14px 55px rgba(96,165,255,0.35);
+  transition-duration : 200ms;
+  
+
+}
+
+.specialbutton:hover{
+  opacity:0.6;
+  
+}
+
+.truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.loading{
+animation : width 5s linear  infinite;
+margin-right: auto
+
+
+}
+
+.loading1{
+  animation-delay: -4s;
+}
+
+.loading2{
+  animation-delay:-2s;
+}
+
+
+@keyframes width {
+   0%{width : 100%;}
+   10%{width : 85%;}
+   20%{width : 75%;}
+   30%{width : 65%;}
+   40%{width : 55%;}
+   50%{width : 45%;}
+   60%{width : 87%;}
+   70%{width : 78%;}
+   80%{width : 45%;}
+   90%{width : 89%;}
+   100%{width : 100%;}
+
+
 }
